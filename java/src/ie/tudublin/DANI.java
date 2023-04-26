@@ -6,9 +6,8 @@ import processing.core.PApplet;
 
 public class DANI extends PApplet {
 
-	String word;
-	int count;
-
+	words w;
+	
 	public void settings() {
 		size(1000, 1000);
 		//fullScreen(SPAN);
@@ -43,32 +42,13 @@ public class DANI extends PApplet {
         
 	}
 
-	public void Follow(String word, int count)
+	public loadFile()
 	{
-		this.word = word;
-		this.count = count;
+		loadStrings("filename.txt"); // Load a text file into a String array
+		split(line, ' '); // Split a string into an array of words
+		w.replaceAll("[^\\w\\s]",""); // Remove punction characters
+		s.toLowerCase() // Convert a string to lower case 
 	}
 
-	public String getWord() {
-		return word;
-	}
 
-	public void setWord(String word) {
-		this.word = word;
-	}
-
-	public int getCount() {
-		return count;
-	}
-
-	public void setCount(int count) {
-		this.count = count;
-	}
-
-	public String toString()
-	{
-		String string;
-		string = "Word:" + word + "Count:" + count;
-		return string;
-	}
 }
