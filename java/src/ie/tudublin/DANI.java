@@ -62,5 +62,20 @@ public class DANI extends PApplet {
 		
 	}
 
+	public findWord(str)
+	{
+		count++;
+	}
+
+	public findFollow(str)
+	{
+		return false;
+	}
+
+	public printModel()
+	{
+
+	}
+
 
 }
