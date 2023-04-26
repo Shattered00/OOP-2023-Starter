@@ -33,7 +33,7 @@ public class words extends PApplet {
         this.follow = follow;
     }
 
-
+    
     public String toString()
 	{
 		String string;

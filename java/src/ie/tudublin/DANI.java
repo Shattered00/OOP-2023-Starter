@@ -41,13 +41,25 @@ public class DANI extends PApplet {
         textAlign(CENTER, CENTER);
         
 	}
+	void printModel()
+    {
+       
+    }
 
 	public loadFile()
 	{
-		loadStrings("filename.txt"); // Load a text file into a String array
-		split(line, ' '); // Split a string into an array of words
-		w.replaceAll("[^\\w\\s]",""); // Remove punction characters
-		s.toLowerCase() // Convert a string to lower case 
+		
+		for(i = 0; i < sonnet.length; i++)
+		{
+			loadStrings("filename.txt"); // Load a text file into a String array
+			split(line, ' '); // Split a string into an array of words
+			w.replaceAll("[^\\w\\s]",""); // Remove punction characters
+			s.toLowerCase() // Convert a string to lower case 	 
+	
+		}
+		
+			
+		
 	}
 
 
